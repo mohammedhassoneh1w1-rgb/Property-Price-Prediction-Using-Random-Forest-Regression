@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <template>
+      <style>
+@font-face{font-family:"Cairo";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/cairo-arabic-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:700;font-display:block;src:url("assets/fonts/cairo-arabic-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/cairo-arabic-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:900;font-display:block;src:url("assets/fonts/cairo-arabic-900-normal.woff2") format("woff2");}
+
+#s3-duplex-root{position:absolute;inset:0;overflow:hidden;--paper:#E9E0D3;--paper-dark:#D4C8B8;--paper-light:#F6F0E7;--cream:#FFFDF7;--ink:#1B1D1E;--ink-soft:#3A3D3E;--accent-warm:#E66A21;--accent-warm-dark:#C85218;--accent-cool:#2A8791;--accent-cool-dark:#216A72;--accent-gold:#D8A44A;font-family:"Cairo","DejaVu Sans",sans-serif;color:var(--ink);direction:rtl;}
+#s3-duplex-bg{position:absolute;inset:0;background:radial-gradient(130% 85% at 50% 38%,#F6F0E7 0%,#E9E0D3 58%,#D9CDBD 100%);}
+/* paper grain: registry component grain-overlay, adapted to a static (non-animated) paper tooth */
+#s3-duplex-grain{position:absolute;inset:0;pointer-events:none;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-size:256px 256px;opacity:.13;mix-blend-mode:multiply;}
+.mask{position:absolute;left:80px;right:80px;overflow:hidden;text-align:center;white-space:nowrap;}
+.mask .w{display:inline-block;}
+
+
+#s3-tag{position:absolute;left:80px;right:80px;top:226px;text-align:center;font-weight:700;font-size:52px;color:var(--ink-soft);}
+#s3-tag i{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--accent-cool);margin:0 16px;vertical-align:middle;}
+#s3-kw{top:296px;font-weight:900;font-size:220px;line-height:1.2;padding:4px 0 26px;}
+#s3-k1{color:var(--accent-warm-dark);}
+#s3-sec{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible;}
+#s3-card{position:absolute;left:240px;top:600px;width:600px;height:740px;box-sizing:border-box;border:12px solid var(--cream);border-radius:10px;overflow:hidden;background:#cfc6ba;box-shadow:0 20px 44px rgba(27,29,30,.24);}
+#s3-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;}
+#s3-fin{top:1372px;font-weight:800;font-size:100px;line-height:1.3;padding:0 0 16px;}
+#s3-stamp{position:absolute;left:392px;top:1196px;width:600px;height:150px;box-sizing:border-box;border:9px solid var(--accent-warm);border-radius:20px;background:rgba(246,240,231,.94);color:var(--accent-warm-dark);font-weight:900;font-size:78px;line-height:128px;text-align:center;white-space:nowrap;}
+
+      </style>
+      <div data-hf-id="hf-qj00" id="s3-duplex-root" data-composition-id="s3-duplex" data-width="1080" data-height="1920" dir="rtl">
+        <div data-hf-id="hf-u9mq" id="s3-duplex-bg"></div>
+
+        <div data-hf-id="hf-egz9" id="s3-tag">الشقتين الأرضيات<i data-hf-id="hf-wt6k"></i></div>
+        <div data-hf-id="hf-ukn7" class="mask" id="s3-kw"><span data-hf-id="hf-y2ms" class="w" id="s3-k1">دوبلكس</span></div>
+        <svg data-hf-id="hf-4600" id="s3-sec" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+          <g data-hf-id="hf-mlns" id="s3-secg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path data-hf-id="hf-ihs1" id="s3-gnd" d="M 130 1100 L 950 1100" pathLength="1" stroke="#1B1D1E" stroke-width="12" />
+            <rect data-hf-id="hf-fntp" id="s3-box" x="180" y="640" width="720" height="460" rx="6" pathLength="1" stroke="#1B1D1E" stroke-width="7" />
+            <path data-hf-id="hf-nl2t" id="s3-fl1" d="M 180 870 L 560 870" pathLength="1" stroke="#1B1D1E" stroke-width="7" />
+            <path data-hf-id="hf-yzfa" id="s3-fl2" d="M 720 870 L 900 870" pathLength="1" stroke="#1B1D1E" stroke-width="7" />
+            <path data-hf-id="hf-r0zx" id="s3-stair" d="M 420 1100 L 420.0 1061.7 L 466.7 1061.7 L 466.7 1023.3 L 513.3 1023.3 L 513.3 985.0 L 560.0 985.0 L 560.0 946.7 L 606.7 946.7 L 606.7 908.3 L 653.3 908.3 L 653.3 870.0 L 700.0 870.0" pathLength="1" stroke="#E66A21" stroke-width="12" />
+          </g>
+        </svg>
+        <div data-hf-id="hf-xtu2" id="s3-card">
+          <video data-color-grading="{&quot;preset&quot;:&quot;mono-clean&quot;,&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;exposure&quot;:0,&quot;contrast&quot;:0.12,&quot;highlights&quot;:-0.04,&quot;shadows&quot;:0.04,&quot;whites&quot;:0,&quot;blacks&quot;:-0.08,&quot;temperature&quot;:0,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-1},&quot;details&quot;:{&quot;vignette&quot;:0,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-g9mw" id="s3-vid" src="assets/rawreel_1080.mp4" data-start="0" data-duration="2.433333" data-media-start="18.063" data-track-index="0" muted playsinline></video>
+        </div>
+        <div data-hf-id="hf-6eoo" class="mask" id="s3-fin"><span data-hf-id="hf-x692" class="w" id="s3-f1">بتشطيبات</span></div>
+        <div data-hf-id="hf-c0n0" id="s3-stamp">سوبر ديلوكس</div>
+
+        <div data-hf-id="hf-862s" id="s3-duplex-grain"></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const D = document;
+
+          const rise = (sel, at, d = 0.2) => tl.fromTo(sel, { yPercent: 115 }, { yPercent: 0, duration: d, ease: "power4.out" }, at);
+          const draw = (sel, at, d, ease = "power2.out") => tl.fromTo(sel, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease }, at);
+          rise("#s3-k1", 0.12);
+          draw("#s3-gnd", 0.04, 0.3); draw("#s3-box", 0.12, 0.4);
+          draw("#s3-fl1", 0.30, 0.22); draw("#s3-fl2", 0.34, 0.18);
+          draw("#s3-stair", 0.40, 0.32, "none");
+          tl.to("#s3-secg", { opacity: 0.2, duration: 0.2, ease: "power1.out" }, 0.717);
+          tl.fromTo("#s3-card", { y: 120, opacity: 0 }, { y: 0, opacity: 1, duration: 0.24, ease: "power3.out" }, 0.717);
+          rise("#s3-f1", 0.717);
+          tl.fromTo("#s3-stamp", { scale: 1.55, opacity: 0, rotation: -7 }, { scale: 1, opacity: 1, rotation: -7, duration: 0.13, ease: "power3.in" }, 1.767);
+          tl.fromTo("#s3-stamp", { scale: 1 }, { scale: 0.97, duration: 0.05, ease: "none", immediateRender: false, yoyo: true, repeat: 1 }, 1.897);
+          tl.to("#s3-k1", { color: "#1B1D1E", duration: 0.15, ease: "power1.out" }, 1.767);
+
+          window.__timelines["s3-duplex"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

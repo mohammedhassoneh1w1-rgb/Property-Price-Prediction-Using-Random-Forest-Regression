@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+@font-face{font-family:"Cairo";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/cairo-arabic-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:700;font-display:block;src:url("assets/fonts/cairo-arabic-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/cairo-arabic-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:900;font-display:block;src:url("assets/fonts/cairo-arabic-900-normal.woff2") format("woff2");}
+#captions-root{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+#cap-scrim{position:absolute;left:0;right:0;top:1090px;height:400px;opacity:0;background:radial-gradient(60% 46% at 50% 50%,rgba(14,14,14,.42) 0%,rgba(14,14,14,.18) 55%,rgba(14,14,14,0) 100%);}
+.cap-g{position:absolute;left:80px;right:80px;top:1232px;display:flex;flex-direction:row;justify-content:center;align-items:baseline;gap:22px;opacity:0;direction:rtl;font-family:"Cairo","DejaVu Sans",sans-serif;font-weight:800;font-size:86px;line-height:1.15;white-space:nowrap;}
+.cw{display:block;color:#FFFDF8;text-shadow:0 2px 3px rgba(0,0,0,.45),0 4px 22px rgba(0,0,0,.45);}
+.cw.warm{color:#F07A2E;}
+.cw.cool{color:#5FC0C9;}
+      </style>
+      <div id="captions-root" data-composition-id="captions" data-width="1080" data-height="1920">
+        <div id="cap-scrim"></div>
+        <div class="cap-g" id="cap-g0" dir="rtl"><span class="cw " id="cap-g0-w0">مشروع</span><span class="cw " id="cap-g0-w1">جديد</span></div>
+        <div class="cap-g" id="cap-g1" dir="rtl"><span class="cw " id="cap-g1-w0">موقع</span><span class="cw warm" id="cap-g1-w1">مميز</span></div>
+        <div class="cap-g" id="cap-g2" dir="rtl"><span class="cw " id="cap-g2-w0">الشقتين</span><span class="cw cool" id="cap-g2-w1">الأرضيات</span></div>
+        <div class="cap-g" id="cap-g3" dir="rtl"><span class="cw " id="cap-g3-w0">وأكيد</span></div>
+        <div class="cap-g" id="cap-g4" dir="rtl"><span class="cw " id="cap-g4-w0">الدراجة</span><span class="cw " id="cap-g4-w1">هاي</span></div>
+        <div class="cap-g" id="cap-g5" dir="rtl"><span class="cw warm" id="cap-g5-w0">مو</span><span class="cw " id="cap-g5-w1">للبيع</span></div>
+        <div class="cap-g" id="cap-g6" dir="rtl"><span class="cw " id="cap-g6-w0">وإذا</span><span class="cw " id="cap-g6-w1">بتدور</span></div>
+        <div class="cap-g" id="cap-g7" dir="rtl"><span class="cw " id="cap-g7-w0">على</span><span class="cw " id="cap-g7-w1">فرصة</span></div>
+        <div class="cap-g" id="cap-g8" dir="rtl"><span class="cw warm" id="cap-g8-w0">استثنائية</span><span class="cw " id="cap-g8-w1">ومميزة</span></div>
+        <div class="cap-g" id="cap-g9" dir="rtl"><span class="cw " id="cap-g9-w0">نرجع</span><span class="cw " id="cap-g9-w1">ونحكي</span><span class="cw " id="cap-g9-w2">لك</span></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          tl.set("#cap-g0", { opacity: 1 }, 0.0000); tl.set("#cap-g0", { opacity: 0 }, 0.7000);
+          tl.fromTo("#cap-g0-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 0.0000);
+          tl.fromTo("#cap-g0-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 0.3900);
+          tl.to("#cap-g0-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 0.3900);
+          tl.set("#cap-g1", { opacity: 1 }, 3.2500); tl.set("#cap-g1", { opacity: 0 }, 4.2000);
+          tl.fromTo("#cap-g1-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 3.2500);
+          tl.fromTo("#cap-g1-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 3.4200);
+          tl.to("#cap-g1-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 3.4200);
+          tl.set("#cap-g2", { opacity: 1 }, 7.8670); tl.set("#cap-g2", { opacity: 0 }, 9.1667);
+          tl.fromTo("#cap-g2-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 7.8670);
+          tl.fromTo("#cap-g2-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 8.4870);
+          tl.to("#cap-g2-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 8.4870);
+          tl.set("#cap-g3", { opacity: 1 }, 11.6930); tl.set("#cap-g3", { opacity: 0 }, 12.4030);
+          tl.fromTo("#cap-g3-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 11.6930);
+          tl.set("#cap-g4", { opacity: 1 }, 12.4030); tl.set("#cap-g4", { opacity: 0 }, 13.4730);
+          tl.fromTo("#cap-g4-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 12.4030);
+          tl.fromTo("#cap-g4-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 12.8630);
+          tl.to("#cap-g4-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 12.8630);
+          tl.set("#cap-g5", { opacity: 1 }, 13.4730); tl.set("#cap-g5", { opacity: 0 }, 13.9833);
+          tl.fromTo("#cap-g5-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 13.4730);
+          tl.fromTo("#cap-g5-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 13.6030);
+          tl.to("#cap-g5-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 13.6030);
+          tl.set("#cap-g6", { opacity: 1 }, 14.1270); tl.set("#cap-g6", { opacity: 0 }, 14.7670);
+          tl.fromTo("#cap-g6-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 14.1270);
+          tl.fromTo("#cap-g6-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 14.3670);
+          tl.to("#cap-g6-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 14.3670);
+          tl.set("#cap-g7", { opacity: 1 }, 14.7670); tl.set("#cap-g7", { opacity: 0 }, 15.3070);
+          tl.fromTo("#cap-g7-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 14.7670);
+          tl.fromTo("#cap-g7-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 14.9670);
+          tl.to("#cap-g7-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 14.9670);
+          tl.set("#cap-g8", { opacity: 1 }, 15.3070); tl.set("#cap-g8", { opacity: 0 }, 17.1000);
+          tl.fromTo("#cap-g8-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 15.3070);
+          tl.fromTo("#cap-g8-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 15.9270);
+          tl.to("#cap-g8-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 15.9270);
+          tl.set("#cap-g9", { opacity: 1 }, 17.1670); tl.set("#cap-g9", { opacity: 0 }, 18.3000);
+          tl.fromTo("#cap-g9-w0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 17.1670);
+          tl.fromTo("#cap-g9-w1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 17.4670);
+          tl.to("#cap-g9-w0", { opacity: 0.55, duration: 0.05, ease: "none" }, 17.4670);
+          tl.fromTo("#cap-g9-w2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.05, ease: "power2.out" }, 17.8070);
+          tl.to("#cap-g9-w1", { opacity: 0.55, duration: 0.05, ease: "none" }, 17.8070);
+          tl.set("#cap-scrim", { opacity: 1 }, 0.0000); tl.set("#cap-scrim", { opacity: 0 }, 0.7000);
+          tl.set("#cap-scrim", { opacity: 1 }, 3.2500); tl.set("#cap-scrim", { opacity: 0 }, 4.2000);
+          tl.set("#cap-scrim", { opacity: 1 }, 7.8670); tl.set("#cap-scrim", { opacity: 0 }, 9.1667);
+          tl.set("#cap-scrim", { opacity: 1 }, 11.6930); tl.set("#cap-scrim", { opacity: 0 }, 12.4030);
+          tl.set("#cap-scrim", { opacity: 1 }, 12.4030); tl.set("#cap-scrim", { opacity: 0 }, 13.4730);
+          tl.set("#cap-scrim", { opacity: 1 }, 13.4730); tl.set("#cap-scrim", { opacity: 0 }, 13.9833);
+          tl.set("#cap-scrim", { opacity: 1 }, 14.1270); tl.set("#cap-scrim", { opacity: 0 }, 14.7670);
+          tl.set("#cap-scrim", { opacity: 1 }, 14.7670); tl.set("#cap-scrim", { opacity: 0 }, 15.3070);
+          tl.set("#cap-scrim", { opacity: 1 }, 15.3070); tl.set("#cap-scrim", { opacity: 0 }, 17.1000);
+          tl.set("#cap-scrim", { opacity: 1 }, 17.1670); tl.set("#cap-scrim", { opacity: 0 }, 18.3000);
+          window.__timelines["captions"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

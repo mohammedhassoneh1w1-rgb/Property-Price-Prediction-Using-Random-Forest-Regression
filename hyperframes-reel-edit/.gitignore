@@ -1,0 +1,7 @@
+renders/
+snapshots/
+.hyperframes/
+node_modules/
+analysis/audio16k.wav
+analysis/f_*.png
+analysis/faces.png

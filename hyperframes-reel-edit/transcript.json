@@ -1,0 +1,302 @@
+{
+ "source": "rawreel.mp4",
+ "language": "ar (Jordanian/Levantine dialect)",
+ "timebase": "seconds; start/end = source rawreel time, out_start/out_end = final reel time",
+ "method": "Whisper large-v3 (sherpa-onnx int8 ONNX export) decoded on pause-delimited chunks + sub-chunks; word bounds anchored on measured energy dips (10 ms RMS) and interpolated inside short chunks; ambiguous words resolved by teacher-forced log-prob comparison; manually corrected",
+ "corrections": {
+  "بأمؤذينة": "بأم أذينة",
+  "شقط/شقا": "شقق",
+  "الشقطين": "الشقتين",
+  "ديروكس/درقس": "ديلوكس (super deluxe – speaker's accent)",
+  "مولى/مولا/وليل بيع": "مو للبيع (log-prob −2.3 vs مش للبيع −7.4)",
+  "استيقاظك/اثنائية": "استثنائية"
+ },
+ "uncertain": [
+  {
+   "word": "ديارة",
+   "note": "Consistent across all decodes (log-prob −0.17 vs ديارا −4.0); appears to be a proper name (likely the developer). Spelling unverified."
+  }
+ ],
+ "words": [
+  {
+   "text": "مشروع",
+   "start": 0.0,
+   "end": 0.39,
+   "out_start": 0.0,
+   "out_end": 0.39
+  },
+  {
+   "text": "جديد",
+   "start": 0.39,
+   "end": 0.7,
+   "out_start": 0.39,
+   "out_end": 0.7
+  },
+  {
+   "text": "بأم",
+   "start": 0.7,
+   "end": 0.94,
+   "out_start": 0.7,
+   "out_end": 0.94
+  },
+  {
+   "text": "أذينة",
+   "start": 0.94,
+   "end": 1.33,
+   "out_start": 0.94,
+   "out_end": 1.33
+  },
+  {
+   "text": "قريب",
+   "start": 1.58,
+   "end": 1.92,
+   "out_start": 1.58,
+   "out_end": 1.92
+  },
+  {
+   "text": "من",
+   "start": 1.92,
+   "end": 2.08,
+   "out_start": 1.92,
+   "out_end": 2.08
+  },
+  {
+   "text": "الضمان",
+   "start": 2.08,
+   "end": 2.43,
+   "out_start": 2.08,
+   "out_end": 2.43
+  },
+  {
+   "text": "الاجتماعي",
+   "start": 2.43,
+   "end": 3.01,
+   "out_start": 2.43,
+   "out_end": 3.01
+  },
+  {
+   "text": "موقع",
+   "start": 3.25,
+   "end": 3.4,
+   "out_start": 3.25,
+   "out_end": 3.4
+  },
+  {
+   "text": "مميز",
+   "start": 3.42,
+   "end": 3.97,
+   "out_start": 3.42,
+   "out_end": 3.97
+  },
+  {
+   "text": "ومساحات",
+   "start": 4.23,
+   "end": 4.86,
+   "out_start": 4.23,
+   "out_end": 4.86
+  },
+  {
+   "text": "واسعة",
+   "start": 4.94,
+   "end": 5.3,
+   "out_start": 4.94,
+   "out_end": 5.3
+  },
+  {
+   "text": "العمارة",
+   "start": 6.69,
+   "end": 7.28,
+   "out_start": 5.557,
+   "out_end": 6.147
+  },
+  {
+   "text": "مكونة",
+   "start": 7.3,
+   "end": 7.74,
+   "out_start": 6.167,
+   "out_end": 6.607
+  },
+  {
+   "text": "من",
+   "start": 7.95,
+   "end": 8.12,
+   "out_start": 6.817,
+   "out_end": 6.987
+  },
+  {
+   "text": "ثمان",
+   "start": 8.15,
+   "end": 8.42,
+   "out_start": 7.017,
+   "out_end": 7.287
+  },
+  {
+   "text": "شقق",
+   "start": 8.45,
+   "end": 8.65,
+   "out_start": 7.317,
+   "out_end": 7.517
+  },
+  {
+   "text": "الشقتين",
+   "start": 9.0,
+   "end": 9.62,
+   "out_start": 7.867,
+   "out_end": 8.487
+  },
+  {
+   "text": "الأرضيات",
+   "start": 9.62,
+   "end": 10.18,
+   "out_start": 8.487,
+   "out_end": 9.047
+  },
+  {
+   "text": "دوبلكس",
+   "start": 10.62,
+   "end": 11.01,
+   "out_start": 9.287,
+   "out_end": 9.677
+  },
+  {
+   "text": "بتشطيبات",
+   "start": 11.4,
+   "end": 12.14,
+   "out_start": 9.883,
+   "out_end": 10.623
+  },
+  {
+   "text": "سوبر",
+   "start": 12.45,
+   "end": 12.6,
+   "out_start": 10.933,
+   "out_end": 11.083
+  },
+  {
+   "text": "ديلوكس",
+   "start": 12.6,
+   "end": 12.86,
+   "out_start": 11.083,
+   "out_end": 11.343
+  },
+  {
+   "text": "وأكيد",
+   "start": 13.21,
+   "end": 13.64,
+   "out_start": 11.693,
+   "out_end": 12.123
+  },
+  {
+   "text": "الدراجة",
+   "start": 13.92,
+   "end": 14.36,
+   "out_start": 12.403,
+   "out_end": 12.843
+  },
+  {
+   "text": "هاي",
+   "start": 14.38,
+   "end": 14.77,
+   "out_start": 12.863,
+   "out_end": 13.253
+  },
+  {
+   "text": "مو",
+   "start": 14.99,
+   "end": 15.12,
+   "out_start": 13.473,
+   "out_end": 13.603
+  },
+  {
+   "text": "للبيع",
+   "start": 15.12,
+   "end": 15.39,
+   "out_start": 13.603,
+   "out_end": 13.873
+  },
+  {
+   "text": "وإذا",
+   "start": 61.76,
+   "end": 62.0,
+   "out_start": 14.127,
+   "out_end": 14.367
+  },
+  {
+   "text": "بتدور",
+   "start": 62.0,
+   "end": 62.4,
+   "out_start": 14.367,
+   "out_end": 14.767
+  },
+  {
+   "text": "على",
+   "start": 62.4,
+   "end": 62.6,
+   "out_start": 14.767,
+   "out_end": 14.967
+  },
+  {
+   "text": "فرصة",
+   "start": 62.6,
+   "end": 62.94,
+   "out_start": 14.967,
+   "out_end": 15.307
+  },
+  {
+   "text": "استثنائية",
+   "start": 62.94,
+   "end": 63.56,
+   "out_start": 15.307,
+   "out_end": 15.927
+  },
+  {
+   "text": "ومميزة",
+   "start": 63.56,
+   "end": 64.44,
+   "out_start": 15.927,
+   "out_end": 16.807
+  },
+  {
+   "text": "نرجع",
+   "start": 64.8,
+   "end": 65.1,
+   "out_start": 17.167,
+   "out_end": 17.467
+  },
+  {
+   "text": "ونحكي",
+   "start": 65.1,
+   "end": 65.42,
+   "out_start": 17.467,
+   "out_end": 17.787
+  },
+  {
+   "text": "لك",
+   "start": 65.44,
+   "end": 65.72,
+   "out_start": 17.807,
+   "out_end": 18.087
+  },
+  {
+   "text": "ديارة",
+   "start": 65.95,
+   "end": 66.78,
+   "out_start": 18.317,
+   "out_end": 19.147
+  },
+  {
+   "text": "هي",
+   "start": 66.9,
+   "end": 67.28,
+   "out_start": 19.267,
+   "out_end": 19.647
+  },
+  {
+   "text": "خيارك",
+   "start": 67.3,
+   "end": 67.7,
+   "out_start": 19.667,
+   "out_end": 20.067
+  }
+ ]
+}

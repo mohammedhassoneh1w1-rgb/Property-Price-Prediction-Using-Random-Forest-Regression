@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+@font-face{font-family:"Cairo";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/cairo-arabic-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:700;font-display:block;src:url("assets/fonts/cairo-arabic-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/cairo-arabic-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:900;font-display:block;src:url("assets/fonts/cairo-arabic-900-normal.woff2") format("woff2");}
+
+#s1-location-root{position:absolute;inset:0;overflow:hidden;--paper:#E9E0D3;--paper-dark:#D4C8B8;--paper-light:#F6F0E7;--cream:#FFFDF7;--ink:#1B1D1E;--ink-soft:#3A3D3E;--accent-warm:#E66A21;--accent-warm-dark:#C85218;--accent-cool:#2A8791;--accent-cool-dark:#216A72;--accent-gold:#D8A44A;font-family:"Cairo","DejaVu Sans",sans-serif;color:var(--ink);direction:rtl;}
+#s1-location-bg{position:absolute;inset:0;background:radial-gradient(130% 85% at 50% 38%,#F6F0E7 0%,#E9E0D3 58%,#D9CDBD 100%);}
+/* paper grain: registry component grain-overlay, adapted to a static (non-animated) paper tooth */
+#s1-location-grain{position:absolute;inset:0;pointer-events:none;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-size:256px 256px;opacity:.13;mix-blend-mode:multiply;}
+.mask{position:absolute;left:80px;right:80px;overflow:hidden;text-align:center;white-space:nowrap;}
+.mask .w{display:inline-block;}
+
+
+#s1-tag{position:absolute;left:80px;right:80px;top:226px;text-align:center;font-weight:700;font-size:46px;color:var(--ink-soft);}
+#s1-tag i{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--accent-warm);margin:0 16px;vertical-align:middle;}
+#s1-kw{top:300px;font-weight:900;font-size:212px;line-height:1.2;padding:4px 0 26px;}
+#s1-kw .w{margin:0 22px;}
+#s1-mapwrap{position:absolute;left:80px;top:640px;width:920px;height:820px;transform-origin:50% 60%;}
+#s1-map{position:absolute;inset:0;width:920px;height:820px;overflow:visible;}
+#s1-near{position:absolute;left:0;top:0;transform-origin:50% 50%;}
+#s1-near span{display:block;position:absolute;left:330px;top:392px;padding:2px 22px 8px;border-radius:40px;background:var(--paper-light);border:3px solid var(--accent-cool);color:var(--accent-cool-dark);font-weight:800;font-size:44px;white-space:nowrap;}
+#s1-sub{top:1496px;font-weight:800;font-size:64px;line-height:1.3;padding:0 0 18px;}
+#s1-sub .w{margin:0 9px;}
+#s1-sub .cool{color:var(--accent-cool);}
+
+      </style>
+      <div id="s1-location-root" data-composition-id="s1-location" data-width="1080" data-height="1920" dir="rtl">
+        <div id="s1-location-bg"></div>
+
+        <div id="s1-tag">مشروع جديد<i></i></div>
+        <div class="mask" id="s1-kw"><span class="w" id="s1-kw1">أم</span><span class="w" id="s1-kw2">أذينة</span></div>
+        <div id="s1-mapwrap">
+          <svg id="s1-map" viewBox="0 0 920 820" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <mask id="s1-linkmask" maskUnits="userSpaceOnUse" x="0" y="0" width="920" height="820">
+                <path id="s1-linkdraw" d="M 486 470 Q 400 452 312 424" pathLength="1" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+              </mask>
+            </defs>
+            <rect id="s1-frame" x="10" y="10" width="900" height="800" rx="30" pathLength="1" fill="#F2EADD" stroke="#3A3D3E" stroke-width="4" />
+            <g id="s1-blocks" fill="#D4C8B8">
+              <rect x="70" y="60" width="200" height="200" rx="10" />
+              <rect x="372" y="300" width="200" height="230" rx="10" opacity=".7" />
+              <rect x="680" y="320" width="190" height="230" rx="10" />
+              <rect x="80" y="620" width="190" height="150" rx="10" opacity=".7" />
+              <rect x="690" y="640" width="180" height="140" rx="10" opacity=".6" />
+            </g>
+            <g fill="none" stroke="#1B1D1E" stroke-linecap="round">
+              <path class="s1-st" d="M 40 300 L 880 262" pathLength="1" stroke-width="7" opacity=".72" />
+              <path class="s1-st" d="M 40 568 L 880 604" pathLength="1" stroke-width="7" opacity=".72" />
+              <path class="s1-st" d="M 312 30 L 344 790" pathLength="1" stroke-width="7" opacity=".72" />
+              <path class="s1-st" d="M 646 30 L 610 790" pathLength="1" stroke-width="7" opacity=".72" />
+              <path class="s1-st" d="M 470 30 L 486 282" pathLength="1" stroke-width="5" opacity=".5" />
+              <path class="s1-st" d="M 70 790 L 880 70" pathLength="1" stroke-width="12" opacity=".85" />
+            </g>
+            <path id="s1-route" d="M 616 812 L 608 600 L 528 596" pathLength="1" fill="none" stroke="#E66A21" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M 486 470 Q 400 452 312 424" fill="none" stroke="#2A8791" stroke-width="7" stroke-dasharray="16 14" stroke-linecap="round" mask="url(#s1-linkmask)" />
+            <g id="s1-land" transform="translate(262 400)">
+              <g id="s1-landin">
+                <rect x="-56" y="-56" width="112" height="112" rx="18" fill="#2A8791" />
+                <path d="M -34 -16 L 0 -38 L 34 -16 Z" fill="#FFFDF7" />
+                <rect x="-28" y="-10" width="10" height="34" fill="#FFFDF7" />
+                <rect x="-5" y="-10" width="10" height="34" fill="#FFFDF7" />
+                <rect x="18" y="-10" width="10" height="34" fill="#FFFDF7" />
+                <rect x="-36" y="28" width="72" height="8" fill="#FFFDF7" />
+              </g>
+            </g>
+            <g id="s1-pin" transform="translate(528 596)">
+              <g id="s1-pinin">
+                <ellipse cx="0" cy="4" rx="26" ry="8" fill="#1B1D1E" opacity=".22" />
+                <path d="M 0 0 C -14 -30 -50 -56 -50 -92 A 50 50 0 1 1 50 -92 C 50 -56 14 -30 0 0 Z" fill="#E66A21" />
+                <circle cx="0" cy="-92" r="19" fill="#FFFDF7" />
+              </g>
+            </g>
+          </svg>
+          <div id="s1-near"><span>قريب</span></div>
+        </div>
+        <div class="mask" id="s1-sub"><span class="w" id="s1-s1">قريب</span><span class="w" id="s1-s2">من</span><span class="w cool" id="s1-s3">الضمان</span><span class="w cool" id="s1-s4">الاجتماعي</span></div>
+
+        <div id="s1-location-grain"></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const D = document;
+
+          const rise = (sel, at, d = 0.2) => tl.fromTo(sel, { yPercent: 115 }, { yPercent: 0, duration: d, ease: "power4.out" }, at);
+          const draw = (sel, at, d, ease = "power2.out") => tl.fromTo(sel, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease }, at);
+          rise("#s1-kw1", 0.0); rise("#s1-kw2", 0.06);
+          draw("#s1-frame", 0.0, 0.45);
+          tl.fromTo("#s1-blocks", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" }, 0.08);
+          D.querySelectorAll(".s1-st").forEach((p, i) => draw(p, 0.04 + i * 0.05, 0.4));
+          tl.fromTo("#s1-pinin", { y: -90, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "back.out(1.5)" }, 0.24);
+          draw("#s1-route", 0.34, 0.4);
+          rise("#s1-s1", 0.88); rise("#s1-s2", 0.92);
+          tl.fromTo("#s1-landin", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.26, ease: "power3.out" }, 1.38);
+          rise("#s1-s3", 1.38); rise("#s1-s4", 1.44);
+          draw("#s1-linkdraw", 1.46, 0.34);
+          tl.fromTo("#s1-near", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, 1.66);
+          tl.fromTo("#s1-mapwrap", { scale: 1 }, { scale: 1.035, duration: 2.48, ease: "none" }, 0);
+
+          window.__timelines["s1-location"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

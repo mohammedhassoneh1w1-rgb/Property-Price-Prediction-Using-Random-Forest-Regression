@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+@font-face{font-family:"Cairo";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/cairo-arabic-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:700;font-display:block;src:url("assets/fonts/cairo-arabic-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/cairo-arabic-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Cairo";font-style:normal;font-weight:900;font-display:block;src:url("assets/fonts/cairo-arabic-900-normal.woff2") format("woff2");}
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #1B1D1E; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #1B1D1E; font-family: "Cairo", "DejaVu Sans", sans-serif; }
+      .cam { position: absolute; inset: 0; overflow: hidden; }
+      .crop { position: absolute; inset: 0; }
+      .crop video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-fps="60" data-start="0" data-duration="20.366667" data-width="1080" data-height="1920">
+      <!-- World A: presenter A-roll (muted picture; dialogue below is cut to the identical source ranges) -->
+      <div class="cam" id="a0-cam"><div class="crop" id="a0-crop" data-layout-allow-overflow style="transform-origin:50% 50%;">
+        <video id="v-a0" src="assets/rawreel_1080.mp4" data-start="0" data-duration="0.7" data-media-start="0" data-track-index="0" muted playsinline></video>
+      </div></div>
+      <div class="cam" id="a1-cam"><div class="crop" id="a1-crop" data-layout-allow-overflow style="transform-origin:45% 50%;">
+        <video id="v-a1" src="assets/rawreel_1080.mp4" data-start="3.183333" data-duration="1.016667" data-media-start="3.183333" data-track-index="0" muted playsinline></video>
+      </div></div>
+      <div class="cam" id="a2-cam"><div class="crop" id="a2-crop" data-layout-allow-overflow style="transform-origin:50% 43%;">
+        <video id="v-a2" src="assets/rawreel_1080.mp4" data-start="7.7" data-duration="1.466667" data-media-start="8.833333" data-track-index="0" muted playsinline></video>
+      </div></div>
+      <div class="cam" id="a3-cam"><div class="crop" id="a3-crop" data-layout-allow-overflow style="transform-origin:50% 43%;">
+        <video id="v-a3" src="assets/rawreel_1080.mp4" data-start="11.6" data-duration="2.383333" data-media-start="13.116667" data-track-index="0" muted playsinline></video>
+      </div></div>
+      <div class="cam" id="a4-cam"><div class="crop" id="a4-crop" data-layout-allow-overflow style="transform-origin:50% 42%;">
+        <video id="v-a4" src="assets/rawreel_1080.mp4" data-start="13.983333" data-duration="4.316667" data-media-start="61.616667" data-track-index="0" muted playsinline></video>
+      </div></div>
+      <!-- World B: editorial paper scenes -->
+      <div id="host-s1-location" data-composition-id="s1-location" data-composition-src="compositions/s1-location.html" data-start="0.7" data-duration="2.483333" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="host-s2-building" data-composition-id="s2-building" data-composition-src="compositions/s2-building.html" data-start="4.2" data-duration="3.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="host-s3-duplex" data-composition-id="s3-duplex" data-composition-src="compositions/s3-duplex.html" data-start="9.166667" data-duration="2.433333" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="host-s4-cta" data-composition-id="s4-cta" data-composition-src="compositions/s4-cta.html" data-start="18.3" data-duration="2.066667" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <!-- Captions (talking-head windows only) -->
+      <div id="host-captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="20.366667" data-track-index="3" data-track-kind="captions" data-width="1080" data-height="1920"></div>
+      <!-- Dialogue: one clip per retained source range (timing-map.json) -->
+      <audio id="au-r1" src="assets/dialogue.wav" data-start="0" data-duration="5.416666" data-media-start="0" data-track-index="2" data-volume="1"></audio>
+      <audio id="au-r2" src="assets/dialogue.wav" data-start="5.416667" data-duration="3.749999" data-media-start="6.55" data-track-index="2" data-volume="1"></audio>
+      <audio id="au-r3" src="assets/dialogue.wav" data-start="9.166667" data-duration="0.616666" data-media-start="10.5" data-track-index="2" data-volume="1"></audio>
+      <audio id="au-r4" src="assets/dialogue.wav" data-start="9.783333" data-duration="4.199999" data-media-start="11.3" data-track-index="2" data-volume="1"></audio>
+      <audio id="au-r5" src="assets/dialogue.wav" data-start="13.983333" data-duration="6.383332" data-media-start="61.616667" data-track-index="2" data-volume="1"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      // A0 — opening push-in 1.00 → 1.12, strong ease-out, no bounce
+      tl.fromTo("#a0-crop", { scale: 1 }, { scale: 1.12, duration: 0.66, ease: "expo.out" }, 0);
+      // A1 — emphasis crop
+      tl.set("#a1-crop", { scale: 1.08 }, 0);
+      // A3 — 1.08, hard punch to 1.16 on «مو»
+      tl.set("#a3-crop", { scale: 1.08 }, 0);
+      tl.set("#a3-crop", { scale: 1.16 }, 13.473);
+      // A4 — base, hard punch 1.08 on «استثنائية», 1.14 on «نرجع»
+      tl.set("#a4-crop", { scale: 1 }, 0);
+      tl.set("#a4-crop", { scale: 1.08 }, 15.307);
+      tl.set("#a4-crop", { scale: 1.14 }, 17.167);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

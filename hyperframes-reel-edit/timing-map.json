@@ -1,0 +1,90 @@
+{
+ "fps": 60,
+ "source": "rawreel.mp4 (picture via assets/rawreel_1080.mp4, sound via assets/dialogue.wav \u2014 both frame-identical timebase to rawreel)",
+ "output_duration": 20.366667,
+ "output_frames": 1222,
+ "retained": [
+  {
+   "id": "r1",
+   "src_in": 0.0,
+   "src_out": 5.416667,
+   "src_in_frame": 0,
+   "src_out_frame": 325,
+   "out_start": 0.0,
+   "out_end": 5.416667,
+   "out_start_frame": 0,
+   "frames": 325
+  },
+  {
+   "id": "r2",
+   "src_in": 6.55,
+   "src_out": 10.3,
+   "src_in_frame": 393,
+   "src_out_frame": 618,
+   "out_start": 5.416667,
+   "out_end": 9.166667,
+   "out_start_frame": 325,
+   "frames": 225
+  },
+  {
+   "id": "r3",
+   "src_in": 10.5,
+   "src_out": 11.116667,
+   "src_in_frame": 630,
+   "src_out_frame": 667,
+   "out_start": 9.166667,
+   "out_end": 9.783333,
+   "out_start_frame": 550,
+   "frames": 37
+  },
+  {
+   "id": "r4",
+   "src_in": 11.3,
+   "src_out": 15.5,
+   "src_in_frame": 678,
+   "src_out_frame": 930,
+   "out_start": 9.783333,
+   "out_end": 13.983333,
+   "out_start_frame": 587,
+   "frames": 252
+  },
+  {
+   "id": "r5",
+   "src_in": 61.616667,
+   "src_out": 68.0,
+   "src_in_frame": 3697,
+   "src_out_frame": 4080,
+   "out_start": 13.983333,
+   "out_end": 20.366667,
+   "out_start_frame": 839,
+   "frames": 383
+  }
+ ],
+ "removed": [
+  {
+   "src_in": 5.4167,
+   "src_out": 6.55,
+   "dur": 1.1333
+  },
+  {
+   "src_in": 10.3,
+   "src_out": 10.5,
+   "dur": 0.2
+  },
+  {
+   "src_in": 11.1167,
+   "src_out": 11.3,
+   "dur": 0.1833
+  },
+  {
+   "src_in": 15.5,
+   "src_out": 61.616667,
+   "dur": 46.1167
+  },
+  {
+   "src_in": 68.0,
+   "src_out": 68.4333,
+   "dur": 0.4333
+  }
+ ]
+}
